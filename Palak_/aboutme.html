@@ -1,0 +1,111 @@
+<html>
+	
+<head>
+		
+<title></title>
+
+<link rel="stylesheet"
+ type="text/css"
+ href="bootstrap.css"
+ />
+<link rel="stylesheet"
+	 type="text/css"
+  href="styles.css"
+ />
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+		
+	
+</head>
+	
+<body style="background-color:powderblue;">
+		
+<a 
+href="index.html">
+ HOME
+ </a>
+		 &nbsp;
+		<a 
+href="aboutme.html">
+	 ABOUT ME 
+ </a>
+		&nbsp;
+		<a 
+href="contact.html">
+	CONTACT ME
+</a>
+
+		<hr></hr>
+
+
+		
+<p>Study Nature, Love Nature, Stay close to Nature. It will never Fail Uhhh</p>
+
+
+<h3>CLICK ON THE NUMBER BELOW:)</h3>
+<h1 id="number" onclick="count();"> 
+</h1>		
+<p href="me.jpg"> 
+		  
+<img 
+ src="me.jpg" 
+  width="20%" />
+		
+</p>
+
+<h2 id="title" onclick="sayGoodbye();"> Visit_Again:) </h2>
+
+</body>
+
+
+<script type="text/javascript">
+    
+function sayGoodbye()
+{
+        
+console.log("goodbye");
+       
+ $("#title").html("Goodbye");
+       
+ $("#title").click(function () 
+{
+          
+ $("#title").html("Visit_Again:)");
+           
+ $("#title").off("click");
+       
+ });
+   
+ };
+
+
+var counter = 0; 
+
+$("#number").text(counter);
+ 
+
+function count()
+ { 
+
+
+counter = counter + 1;
+ 
+
+$("#number").text(counter); 
+
+} 
+
+</script>		
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
